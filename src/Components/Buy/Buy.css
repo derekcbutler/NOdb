@@ -1,0 +1,94 @@
+#body{
+    height: 180vh;
+    width: 100vw;
+    background-image: url("https://www.samsung.com/global/galaxy/main/images/kv_galaxy-s10_s.jpg");
+    background-position: center;
+    background-attachment: fixed;
+     
+}
+
+.row-one{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.row1-box{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url("https://ic.pics.livejournal.com/lemonlye/503356/29466/29466_original.jpg");
+    border: 5px solid white ;
+    background-position: center;
+    
+}
+
+.buy-button{
+    background-color: transparent;
+    color: white;
+    font-weight: 750;
+    font-size: 20px;
+    border: none;
+}
+
+.row-two{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.row2-box{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    background-image: url("https://ic.pics.livejournal.com/lemonlye/503356/29466/29466_original.jpg");
+    border: 5px solid white   ;
+    background-position: center; 
+}
+
+.row-three{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.row3-box{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    background-image: url("https://ic.pics.livejournal.com/lemonlye/503356/29466/29466_original.jpg");
+    border: 5px solid white;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
