@@ -11,10 +11,11 @@
 }
 
 .logo{
-    margin-left: 400px;
+    margin-left: 50px;
     font-weight: 700;
     font-size: 40px;
     color: white;
+    font-family: 'Righteous', cursive;
 }
 
 .menu-buttons{
@@ -22,11 +23,13 @@
     display: flex;
     flex-direction: row;
     color: white;
+    
 }
 .links{
     padding: 0 20px;
     font-weight: 500;
     font-size: 18px;
+    color: white;
 }
 
 .links-design{
@@ -34,4 +37,9 @@
     color: white;
     font-size: 20px;
     border: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+Link{
+    color: white;
 }

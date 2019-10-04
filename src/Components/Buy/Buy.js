@@ -1,16 +1,7 @@
 import React from "react";
 import "./Buy.css";
 
-class Buy extends React.Component {
-  constructor() {
-    super();
-
-    // this.state(
-
-    // )
-  }
-
-  render() {
+function Buy() {
     return (
       <div id="body">
         <nav>
@@ -42,6 +33,5 @@ class Buy extends React.Component {
       </div>
     );
   }
-}
 
 export default Buy;
