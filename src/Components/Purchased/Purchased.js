@@ -7,7 +7,7 @@ function Purchased(props) {
       <div className="row-one">
         <div className="row1-box">
             {props.e.name}
-            {/* <button className="changeName" onClick={() => props.changeName(props.i)}>Edit Name</button> */}
+           <button className="delete" onClick={() => props.deleteButton(props.id, props.e.name)}>Delete</button>
         </div>
       </div>
     </div>

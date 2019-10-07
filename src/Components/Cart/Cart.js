@@ -28,22 +28,26 @@ class Cart extends React.Component {
     });
   };
 
-    deleteButton = (index) => {
-        axios.post('/api/cartList', {index}).then(res => {this.setState({})})
+    deleteButton = (id, name) => {
+        console.log(id, name)
+        axios
+        .delete(`/api/cartList/${id}`, {id, name})
+        .then(res => {this.setState({cartList: res.data})})
     }
 
   render() {
     console.log(this.state);
     return (
       <div>
-        <Header />
-        {this.state.cartList.map((e, i) => {
+        <Header />  
+        {this.state.cartList.map((e, id) => {
           return (
             <Purchased
               e={e}
-              i={i}
+              id={e.id}
               handleEdit={this.handleEdit}
-              key={`hey ${i}`}
+              deleteButton={this.deleteButton}
+              key={`hey ${id}`}
             />
           );
         })}

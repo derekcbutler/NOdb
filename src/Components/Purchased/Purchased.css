@@ -3,3 +3,10 @@
     background-color: grey;
     color: white;
 }
+.delete{
+    background-color: transparent;
+    color: white;
+    border:none;
+    font-size: 20px;
+    font-weight: 600;
+}
