@@ -17,12 +17,12 @@ class Header extends React.Component {
         <nav id="nav-bar">
           <div className="logo">LINGS STARS</div>
           <div className="menu-buttons">
-            <ul className="links">
-              <Link to="/">Home</Link>
-            </ul>
-            <ul className="links">
-             <Link to="/cart">Cart</Link>
-            </ul>
+            <div className="links">
+              <Link to="/"><button className='links-design'>Home</button></Link>
+            </div>
+            <div className="links">
+             <Link to="/cart"><button className='links-design'>Cart</button></Link>
+            </div>
             {/* <ul className="links">
               <li className="links-design"><Link>Virus</Link></li>
             </ul> */}

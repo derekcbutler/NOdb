@@ -22,14 +22,11 @@
     margin-right: 50px;
     display: flex;
     flex-direction: row;
-    color: white;
-    
 }
 .links{
     padding: 0 20px;
     font-weight: 500;
-    font-size: 18px;
-    color: white;
+    font-size: 18px;  
 }
 
 .links-design{
@@ -38,8 +35,4 @@
     font-size: 20px;
     border: none;
     font-family: 'Orbitron', sans-serif;
-}
-
-Link{
-    color: white;
 }

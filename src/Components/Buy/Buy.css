@@ -20,6 +20,7 @@
 .row1-box{
     height: 350px;
     width: 350px;
+    color: white;
     display: flex;
     align-items: flex-end;
     justify-content: center;

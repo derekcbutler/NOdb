@@ -12,9 +12,11 @@ app.get('/api/starList', ctrl.getStars);
 app.post('/api/starList', ctrl.addStars);
 
 // //Cart Page
-app.get('/api/starList', ctrl.getStars);
-app.delete('/api/starList', ctrl.removeStars);
-app.put('/api/starList', ctrl.changeName);
+app.get('/api/cartList', ctrl.getCart);
+app.delete('/api/cartList/:id', ctrl.removeCart);
+app.put('/api/cartList', ctrl.changeName);
+
+app.post('/api/cartList', ctrl.addToCart);
 
 app.listen( port , () => {
     console.log('Server Running')
