@@ -1,44 +1,65 @@
 import React from "react";
 import "./Purchased.css";
+import axios from "axios";
 
 class Purchased extends React.Component {
   constructor() {
     super();
     this.state = {
       editing: false,
-      input: ""
+      name: ""
     };
   }
 
-  edit = () => {
-    this.setState({
-        editing: !this.state.editing
-    })
+  // edit = () => {
+  //   this.setState({
+  //       editing: !this.state.editing
+  //   })
 
-  }
+  // }
 
-  onChange= e => {
-    let {name, value} = e.target
+  handleInput = e => {
+    let { name, value } = e.target;
     this.setState({
-        [name]: value
-    })
-  }
+      [name]: value
+    });
+  };
+
+  handleEdit = () => {
+    const { id } = this.props;
+    const { name } = this.state;
+
+    axios.put("/api/cartList", { id, name }).then(res => 
+      this.setState({
+        name: res.data[0].name
+      })
+    );
+    
+  };
 
   render() {
-      console.log(this.state)
+    console.log(this.state);
     return (
       <div id="body">
         <div className="row-one">
           {this.state.editing ? (
             <div className="row1-box">
-              <input name='input' value={this.state.input} onChange={(e) => this.onChange(e)} />
+              <input
+                name="name"
+                value={this.state.name}
+                onChange={e => this.handleInput(e)}
+              />
               <button>save</button>
             </div>
           ) : (
             <div className="row1-box">
+              <input 
+               name="name"
+               value={this.state.name}
+              onChange={e => this.handleInput(e)} />
               <button
                 className="delete"
-                onClick={() => this.props.handleEdit(this.props.e.name)}
+                onClick={() => this.handleEdit()}
               >
                 Edit{" "}
               </button>

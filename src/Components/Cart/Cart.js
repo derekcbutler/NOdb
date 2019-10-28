@@ -21,12 +21,12 @@ class Cart extends React.Component {
       .then(res => this.setState({ cartList: res.data }));
   };
 
-  handleEdit = () => {
-    const { editing } = this.state;
-    this.setState({
-      editing: !editing
-    });
-  };
+  // handleEdit = () => {
+  //   const { editing } = this.state;
+  //   this.setState({
+  //     editing: !editing
+  //   });
+  // };
 
     deleteButton = (id, name) => {
         console.log(id, name)
@@ -45,7 +45,7 @@ class Cart extends React.Component {
             <Purchased
               e={e}
               id={e.id}
-              handleEdit={this.handleEdit}
+              // handleEdit={this.handleEdit}
               deleteButton={this.deleteButton}
               key={`hey ${id}`}
             />

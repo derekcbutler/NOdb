@@ -68,8 +68,11 @@ module.exports = {
 
   changeName(req, res) {
     const { id, name } = req.body;
-    console.log(cartList[id]);
-    cartList[id].name = name;
+    let found = cartList.filter((e) => {return e.id === +id})
+    let index = cartList.map((e, i) =>  {if( e.id === +id) return i})
+    cartList.splice(index[0], 1)
+    found[0].name = name;
+    cartList.push(found[0])
     res.status(200).send(cartList);
   },
 
